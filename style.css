@@ -1,0 +1,181 @@
+html {
+    background: white;
+}
+body {
+    background-color: #E5E5E5;
+    max-width: 1444px;
+    margin: 0 auto;
+}
+.vaccineBtn {
+    background: #3E84AC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+header.vaccineFinder {
+    height: 214px;
+    background-size: cover;
+    background-position: 100% 85%;
+    background-image: url("https://www.alida.com/hubfs/Lightened%20TO-%20image.jpeg");
+}
+header.vaccineFinder .container {
+    height: 100%;
+}
+header.vaccineFinder nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header.vaccineFinder h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+header.vaccineFinder h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: none;
+    margin-bottom: 0;
+}
+.container.vaccineFinder {
+    padding: 20px;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-wrap: wrap;
+}
+.container.vaccineFinder p.eligibility {
+    width: 100%;
+    margin: 0;
+    height: 30px;
+    text-align: center;
+}
+.container.vaccineFinder .formContainer {
+    width: 25%;
+    padding-top: 0;
+    height: calc( 100% - 30px);
+    margin-top: 0;
+    overflow: scroll;
+}
+.container.vaccineFinder .formContainer .form {
+    background: white;
+    padding: 25px;
+    border: 1px solid #D5D6E0;
+    border-radius: 3px;
+}
+.container.vaccineFinder .formContainer .cta {
+    background: white;
+    padding: 25px;
+    border: 1px solid #D5D6E0;
+    border-radius: 3px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container.vaccineFinder .formContainer .cta h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.container.vaccineFinder .formContainer .cta a {
+    display: block;
+}
+.container.vaccineFinder .formContainer form {
+    display: flex;
+    flex-direction: column;
+}
+.container.vaccineFinder .formContainer form label {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+.container.vaccineFinder .formContainer form p {
+    font-size: 14px;
+    margin: 10px 0;
+    margin-top: 0;
+}
+.container.vaccineFinder .formContainer form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+.container.vaccineFinder .formContainer form input::placeholder {
+    font-size: 14px;
+}
+.container.vaccineFinder .formContainer form fieldset {
+    padding: 0 0 10px 0;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container.vaccineFinder .formContainer form fieldset input {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.container.vaccineFinder .formContainer form fieldset label {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.container.vaccineFinder .formContainer form button {
+    border: 1px solid #D5D6E0;
+    border-radius: 3px;
+    font-size: 16px;
+    background: white;
+    padding: 10px 20px;
+}
+.container.vaccineFinder .formContainer form button:hover {
+    cursor: pointer;
+}
+.container.vaccineFinder .hero {
+    text-align: center;
+    padding: 20px 0;
+}
+.container.vaccineFinder .listings {
+    height: calc(100% - 30px);
+    overflow: scroll;
+    width: 75%;
+    padding: 10px;
+    padding-top: 0;
+}
+.container.vaccineFinder .listings .listingContainer .listing {
+    border: 1px solid #D5D6E0;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 3px;
+}
+.container.vaccineFinder .listings .listingContainer .listing p,
+.container.vaccineFinder .listings .listingContainer .listing a {
+    font-family: 'Roboto', sans-serif;
+}
+.container.vaccineFinder .listings .listingContainer .listing a {
+    color: #3E84AC;
+    display: block;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+footer.vaccineFinder {
+    text-align: left;
+    height: 60px;
+    padding: 10px;
+}
+footer.vaccineFinder a {
+    display: block;
+    height: 100%;
+}
+footer.vaccineFinder a img {
+    height: 100%;
+    width: auto;
+}

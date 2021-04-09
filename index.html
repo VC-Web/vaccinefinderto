@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Vaccine Finder T.O.</title>
+</head>
+<body>
+<header class="vaccineFinder">
+    <div class="container">
+        <nav>
+            <div class="title">
+                <h1>Vaccine Finder Toronto</h1>
+                <h2>Last Updated April 8, 2021</h2>
+            </div>
+            <div class="share">
+    
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container vaccineFinder">
+    <p class="eligibility">
+  All Listings
+</p>
+<div class="formContainer">
+<div class="form">
+<form action="javascript:void(0);" method="post" id="form">
+<label for="address">Postal Code (M1M2M3)</label>
+<input type="text" id="address" placeholder="Postal Code" required autofocus minlength="6" maxlength="6" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]"/>
+<label for="age">Birth Year</label>
+<input type="text" id="age" placeholder="Birth Year" required autofocus minlength="4" maxlength="4" pattern="[0-9][0-9][0-9][0-9]"/>
+<p>Select types of eligibility to filter accepting loactions:</p>
+<fieldset>
+  <input type="checkbox" id="condition1" name="condition1" value="condition1">
+  <label for="condition1">Occupational</label>
+</fieldset>
+<fieldset>
+  <input type="checkbox" id="condition2" name="condition2" value="condition2">
+  <label for="condition2">Community Factors</label>
+</fieldset>
+<fieldset>
+  <input type="checkbox" id="condition3" name="condition3" value="condition3">
+  <label for="condition3">Highest Priority Health Condition</label>
+</fieldset>
+<fieldset>
+  <input type="checkbox" id="condition4" name="condition4" value="condition4">
+  <label for="condition4">High Priority Health Condition</label>
+</fieldset>
+<fieldset>
+  <input type="checkbox" id="condition5" name="condition5" value="condition5">
+  <label for="condition5">At-Risk Health Condition</label>
+</fieldset>
+<button type="submit">Refresh Results</button>
+</form>
+</div>
+<div class="cta">
+  <h3>
+    Not sure if you qualify?
+  </h3>
+  <a class="vaccineBtn" href="#">Take the Eligibility Quiz</a>
+</div>
+</div>
+<div class="listings">
+<p id="loading" style="display: none; font-size: 20px;">
+Loading, please wait
+</p>
+<div class="listingContainer"></div>  
+</div>
+</div>
+
+<footer class="vaccineFinder">
+    <a href="https://www.alida.com">
+        <img src="https://www.alida.com/hubfs/Powered%20by%20alida%20(grey).png" alt="powered by Alida">
+    </a>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

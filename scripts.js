@@ -121,7 +121,7 @@ sortByLocation = function(latitude, longitude, filter) {
     $.ajax({
     url: "https://api.hubapi.com/cms/v3/hubdb/tables/3958668/rows",
     data: {
-        hapikey: "f8ea6745-ac26-4574-87c5-ef133dccb31a",
+        hapikey: config.hapikey,
         sort: "geo_distance(location," + latitude + "," + longitude + ")",
         locationtype__icontains: filter
     },
@@ -143,7 +143,7 @@ getListings = function() {
     $.ajax({
     url: "https://api.hubapi.com/cms/v3/hubdb/tables/3958668/rows",
     data: {
-        hapikey: "f8ea6745-ac26-4574-87c5-ef133dccb31a",
+        hapikey: config.hapikey,
     },
     error: function () {
       console.log("error");
@@ -197,7 +197,7 @@ $('#form').submit(function(e) {
   $.ajax({
     url: "https://api.positionstack.com/v1/forward",
     data: {
-      access_key: '41358148675774d3acd056f25705ea8a',
+      access_key: config.access_key,
       query: address,
       limit: 1
     },

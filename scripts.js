@@ -31,11 +31,24 @@ paramsFormFill = function() {
     yourAge = 2021 - yourAge;
     $("#age").val(yourAge);  
   }
-
   if ( params.postalcode) {
     $("#address").val(params.postalcode);
   }
-  
+  if ( params.occupational ) {
+    $("#condition1").prop('checked', params.occupational);
+  }
+  if ( params.community ) {
+    $("#condition2").prop('checked', params.community);
+  }
+  if ( params.highest ) {
+    $("#condition3").prop('checked', params.highest);
+  }
+  if ( params.high ) {
+    $("#condition4").prop('checked', params.high);
+  }
+  if ( params.atrisk ) {
+    $("#condition5").prop('checked', params.atrisk);
+  }
   if (params.postalcode || params.age) {
     $('#form').submit();
   }
